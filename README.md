@@ -1,0 +1,2 @@
+# kursimanasgithub.io
+kursi
