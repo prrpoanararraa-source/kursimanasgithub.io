@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>падборка палезних курсов в джалал-Абаде</title>
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+   #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.services {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+    
+    .title button{
+ background-color: yellow;
+ font-size: 47px;
+}
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: hsl(179, 93%, 49%);
+      color: #fffb22;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(246, 219, 46, 0.997);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card button{
+background: rgba(61, 2, 237, 0.318); 
+    }
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #f9ec5b;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 8px;       
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="hhhh.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+ <section class="services">
+    <div class="title">КУРСЫ Танцов<br><br><br>
+      <button><a href="index.html">назад</a></button>
+    </div>
+
+
+  <section class="services">
+    <div class="title"></div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvoAnAdZCYeKD80nP7UtAwFoFvro-09_RnjkW71jR3Q&s=10" alt="">
+        <div class="card-content">
+        <h3>Академия талантов «Bravo»</h3>   
+         <p>проспект Манаса, 61</p>
+         <button><a href="">подробние</a></button> 
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrf6AVZ6ARudFWLuFq_DPEexjIWBdyssVir99HEQkig&s=10" alt="">
+        <div class="card-content">
+          <h3>Trazi dance </h3>
+          <p>улица Турусбекова, 109/1 </p>
+           <button><a href="">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdS8TbPihV5Nf51lTdieoWD6gUI1Yn2xBBrpTmZLHnrA&s=10" alt="">
+        <div class="card-content">
+          <h3>levita</h3>
+          <p>улица Токтогула, 167</p>
+           <button><a href="">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aU8olpE-pZvu33EpWhSx-psBrk9QIb67Xl4W0Qv3pg&s=10" alt="">
+        <div class="card-content">
+          <h3>Танцы для студентов КТУ</h3>
+          <p>.</p>
+           <button><a href="">подробние</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

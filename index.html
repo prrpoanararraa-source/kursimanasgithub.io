@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>падборка палезних курсов в джалал-Абаде</title>
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+   #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.services {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(241, 237, 5, 0.916);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+ 
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #222;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 8px;       
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+  <section class="services">
+    <div class="title">ПОДБОРКА ПОЛЕЗНЫХ КУРСОВ В ГОРОДЕ МАНАС</div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.HzUGedoybknVNXzsf3QlvAHaFG?" alt="">
+        <div class="card-content">
+          <h3>айти</h3>
+          <p>.</p>
+         <button><a href="ayt.html">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.lAXCOR9Iiqs2HBqZbbSgXAHaLH?" alt="">
+        <div class="card-content">
+          <h3>тансы</h3>
+          <p>.</p>
+           <button><a href="dans.html">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://avatars.mds.yandex.net/i?id=75303f98d27eecb1b9b1a13d60cf410c536209f0-5280733-images-thumbs&n=13" alt="">
+        <div class="card-content">
+          <h3>футбол</h3>
+          <p>.</p>
+           <button><a href="football.html">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://avatars.mds.yandex.net/i?id=e454184cabe93ab5ead5515baf046db9901b2b7f-7543946-images-thumbs&n=13" alt="">
+        <div class="card-content">
+          <h3>музыкальные курсы</h3>
+          <p>.</p>
+           <button><a href="piyanina.html">подробние</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

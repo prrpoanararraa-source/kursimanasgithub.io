@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>падборка палезних курсов в джалал-Абаде</title>
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+   #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.services {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+    .title button{
+ background-color: yellow;
+ font-size: 47px;
+}
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #21cbf1;
+      color: #f0e739;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgb(192, 1, 1);
+    }
+
+    .card img {
+      width: 100%;
+      height:250px;
+      object-fit: cover;
+    }  
+    .card button{
+     background: rgba(61, 2, 237, 0.318); 
+    }
+ 
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0; 
+      color: #222;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 15px;
+      margin-top: 8px;       
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="ggg.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+<section class="services">
+    <div class="title">КУРСЫ айти<br><br><br>
+      <button><a href="index.html">назад</a></button>
+    </div>
+</div>
+
+  <section class="services">
+    <div class="title">      </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMq21jN6RTT07abK1RGpWyr51kZFuvmdH1kS3Q5vP4zA&s=10" alt="">
+        <div class="card-content">
+          <h3>IT RUN Academy:</h3>
+          <p>ул. Бегматова, 65 </p>
+         <button><a href="https://instagram.com/@itrun.academy">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OjYssfFoKm6lWkl2RdX9gmukEyfcALqYfeqTEqUP1g&s=10" alt="">
+        <div class="card-content">
+          <h3>IT COLLEGE</h3>
+          <p>Манас, ул. Жусупа Бакиева, 7 </p>
+           <button><a href="https://instagram.com/@ekt.it_college">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="HJK.jpg" alt="">
+        <div class="card-content">
+          <h3>ITl</h3>
+          <p>тарговый центир добыта 3 этаж.</p>
+           <button><a href="https://instagram.com/@light_academy.kg">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnZo-_4VHumLYIK4b4LyBeNmchIUMelRSHMQYvbtmZA&s=10" alt="">
+        <div class="card-content">
+          <h3>Аннур Академия:</h3>
+          <p>проспект Тумонбая Байзакова, 34/1 (3-й этаж).</p>
+           <button><a href="https://instagram.com/@annur_kg">подробние</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

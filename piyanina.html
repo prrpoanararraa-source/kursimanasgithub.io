@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>падборка палезних курсов в джалал-Абаде</title>
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+   #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.services {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+}
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 100px;
+      letter-spacing: 2px;
+    }
+    .title button{
+ background-color: yellow;
+ font-size: 47px;
+}
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #26f9f2;
+      color: #e4ff38;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(230, 255, 2, 0.974);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card button{
+background: rgba(245, 237, 14, 0.925); 
+    }
+ 
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #2298d7;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 8px;       
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="hjh.mp4">
+    Ваш браузер не поддерживает видео.
+</video>
+<section class="services">
+    <div class="title">КУРСЫ музыки<br><br><br>
+      <button><a href="index.html">назад</a></button>
+    </div>
+  <section class="services">
+    <div class="title"></div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-GJUA3CMXVl5d3OPUuK-ASmFT6PVXk-acyjkBzdOKQ&s=10" alt="">
+        <div class="card-content">
+          <h3>комуз</h3>
+           <p></p>
+          <button><a href="">падборка</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncM56ynsZ2bctopuYM7GznXuS4z9rD-C4UqpNkut44w&s" alt="">
+        <div class="card-content">
+          <h3>пиянина</h3>
+          <p></p>
+           <button><a href="">подробние</a></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtAtJQv1dfAGEpfymu8OsJihaxIV1ABvNMsWeqcYl9g&s=10" alt="">
+        <div class="card-content">
+          <h3>гитара</h3>
+          <p></p>
+           <button><a href="">падборка</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
